@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import logo from './images/logo.svg';
+import bg from './images/mountains.svg';
 import './App.css';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { Typography } from '@mui/material';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Parallax pages={4}>
+        <ParallaxLayer offset={0} 
+          speed={1}
+          style={{backgroundImage:`url(${bg})`}}
+          >
+          <Typography variant="h2" >Welcome to my Website!</Typography>
+        </ParallaxLayer>
+        
+        <ParallaxLayer offset={1} speed={0.5}>
+          <Typography variant="h2" >This is the second page!</Typography>
+        </ParallaxLayer>
+      </Parallax>
     </div>
   );
 }
