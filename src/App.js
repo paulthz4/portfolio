@@ -11,7 +11,7 @@ import TaskTracker from './components/TaskTracker';
 function App() {
   return (
     <div className="App" style={{ width: '100%', height: '100%', background: '#1F315B' }}>
-      <Parallax pages={4}>
+      <Parallax pages={5}>
         <ParallaxLayer 
           offset={0} 
           factor={2}
@@ -41,7 +41,7 @@ function App() {
         />
         <ParallaxLayer 
           offset={1.9} 
-          factor={4.1}
+          factor={6.1}
           speed={1}
           >
           {/* dark green background */}
@@ -49,13 +49,15 @@ function App() {
         </ParallaxLayer>
         
         <ParallaxLayer 
-          offset={2}
-          speed={1.3}
-          sticky={{start: 2, end: 3}}
+          offset={3}
+          speed={0.7}
+          sticky={{start: 3, end: 4}}
         >
-          <Card display="flex" style={{padding:'1em', marginLeft:"15%",  width:"25%", height:"5rem", alignItems:'center'}}>
-            <Typography variant="h3">Task Tracker</Typography>
-          </Card>
+          {/* <Card display="flex" style={{padding:'1em', marginLeft:"15%",  width:"25%", height:"5rem", alignItems:'center'}}> */}
+            <Typography variant="h2" style={{color:'white', padding:'1em', marginLeft:"15%",  width:"25%", height:"5rem", alignItems:'center'}} >
+              Task Tracker
+            </Typography>
+          {/* </Card> */}
         </ParallaxLayer>
         
         <TaskTracker/>
@@ -69,8 +71,9 @@ function App() {
         
         
         <ParallaxLayer 
-          offset={1.7}
+          offset={2}
           speed={0.2}
+          factor={1}
         >
           <Typography variant="h2" color="white" >This is what I've been working on lately!</Typography>
         </ParallaxLayer>
