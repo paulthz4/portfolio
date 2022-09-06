@@ -9,9 +9,9 @@ export default function TaskTracker(){
   return (
     <>
       <ParallaxLayer 
-        offset={3.3}
+        offset={3.4}
         speed={0.3}
-        factor={1}
+        factor={0.2}
       >
         <Card display="flex" elevation={4} sx={{ margin:"auto", padding:"2em 6em", width:"25%", height:"fit-content", alignItems:'center'}}>
           <Typography variant="p" sx={{lineHeight: '170%', px:3}}>This project helps users gain insight in their productivity habits. 
@@ -21,8 +21,9 @@ export default function TaskTracker(){
         </Card>
       </ParallaxLayer>
       <ParallaxLayer
-        offset={3.8}
+        offset={3.9}
         speed={0.7}
+        factor={0.3}
       >
         <Box sx={{margin:'0', width: 'fit-content', display:'flex', justifyContent: 'center', alignItems:'center', gap:'7em'}} >
           <img alt="task tracker home page" src={page} style={{width:"45%", height:"auto"}}/>
@@ -37,8 +38,8 @@ export default function TaskTracker(){
       
       <ParallaxLayer
         offset={4}
-        speed={1.2}
-        factor={1}
+        speed={1}
+        factor={0.4}
       >
        <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', gap:'6em'}}>
         <img style={{width:"45%", height:"auto"}} alt="graph 1 showing task frequency" src={graph1}/>

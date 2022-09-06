@@ -37,7 +37,7 @@ const StudyMaster=()=>{
       
       <ParallaxLayer
         offset={5.9}
-        speed={0.4}
+        speed={0.5}
         factor={0.1}
       >
         <Box sx={{margin:'auto', width: 'fit-content', display:'flex', justifyContent: 'center', alignItems:'center', gap:'25%'}} >
