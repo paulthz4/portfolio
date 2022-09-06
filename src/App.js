@@ -6,12 +6,12 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { Box,Card, Typography } from '@mui/material';
 import Bio from './components/Bio';
 import TaskTracker from './components/TaskTracker';
-
+import StudyMaster from './components/StudyMaster';
 
 function App() {
   return (
     <div className="App" style={{ width: '100%', height: '100%', background: '#1F315B' }}>
-      <Parallax pages={5}>
+      <Parallax pages={7}>
         <ParallaxLayer 
           offset={0} 
           factor={2}
@@ -41,7 +41,7 @@ function App() {
         />
         <ParallaxLayer 
           offset={1.9} 
-          factor={6.1}
+          factor={10.1}
           speed={1}
           >
           {/* dark green background */}
@@ -54,7 +54,7 @@ function App() {
           sticky={{start: 3, end: 4}}
         >
           {/* <Card display="flex" style={{padding:'1em', marginLeft:"15%",  width:"25%", height:"5rem", alignItems:'center'}}> */}
-            <Typography variant="h2" style={{color:'white', padding:'1em', marginLeft:"15%",  width:"25%", height:"5rem", alignItems:'center'}} >
+            <Typography variant="h2" style={{color:'white', padding:'1em', marginLeft:"8%",  width:"25%", height:"5rem", alignItems:'center'}} >
               Task Tracker
             </Typography>
           {/* </Card> */}
@@ -62,6 +62,16 @@ function App() {
         
         <TaskTracker/>
         
+        <ParallaxLayer 
+        offset={5.5}
+        sticky={{start:5, end:7}}
+        >
+          <Typography variant="h2" style={{color:'white', padding:'1em', marginLeft:"8%",  width:"25%", height:"5rem", alignItems:'center'}} >
+            Study Master
+          </Typography>
+        </ParallaxLayer>
+        
+        <StudyMaster/>
         <ParallaxLayer 
           offset={0.5}
           speed={0.2}
@@ -75,7 +85,7 @@ function App() {
           speed={0.2}
           factor={1}
         >
-          <Typography variant="h2" color="white" >This is what I've been working on lately!</Typography>
+          <Typography variant="h2" color="white" >Recent Projects</Typography>
         </ParallaxLayer>
       </Parallax>
     </div>
