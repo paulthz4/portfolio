@@ -37,7 +37,14 @@
   }
 }
 
-#id{
+#line{
   position:relative;
   height:2px;
+  background: white
 }
+
+.line{
+  height:2px;
+  background-color:white;
+}
+

@@ -21,7 +21,7 @@ export default function TaskTracker(){
         </Card>
       </ParallaxLayer>
       <ParallaxLayer
-        offset={3.9}
+        offset={3.8}
         speed={0.7}
         factor={0.3}
       >

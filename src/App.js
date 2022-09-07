@@ -14,12 +14,28 @@ function App() {
   const [hover,setHover] = useState(false);
   const [toggle, setToggle] = useState(false);
   
-  const underline = useSpring({from: {opacity:1, textDecoration:'none'},
-      to: {textDecoration: hover? 'underline' : 'none'},
-    });
+  const underline = useSpring({from: {opacity:0},
+    to: {
+      opacity: toggle ? 1 : 0,
+      width: toggle? '100%': '0%',
+    },
+    config: {duration: 300}
+  });
     
-  const underline2 = useSpring({from: {opacity:1, textDecoration:'none'},
-    to: {textDecoration: toggle? 'underline' : 'none'},
+  const underline2 = useSpring({from: {opacity:0, textDecoration:'none'},
+  to: {
+    opacity: hover ? 1 : 0,
+    width: hover? '100%': '0%',
+  },
+  config: {duration: 300}
+});
+  
+  const line = useSpring({from: {opacity:0, textDecoration:'none'},
+    to: {
+      opacity: toggle ? 1 : 0,
+      width: toggle? '80%': '0%',
+    },
+    config: {duration: 400}
   });
   
   return (
@@ -67,8 +83,13 @@ function App() {
           sticky={{start: 3, end: 4}}
         >
           <Link href="https://github.com/paulthz4/TaskTrackerWeb" target="_blank" rel="noopener" underline="none">
-            <Typography variant="h2" style={{color:'white', padding:'1em', marginLeft:"8%",  width:"25%", height:"5rem", alignItems:'center'}} >
-              <animated.div style={underline2} onMouseOver={()=>setToggle(true)} onMouseLeave={()=>setToggle(false)}>Task Tracker</animated.div>
+            <Typography variant="h2" 
+              onMouseOver={()=>setToggle(true)} 
+              onMouseLeave={()=>setToggle(false)}
+              style={{color:'white', padding:'0em', marginLeft:"8%",  maxWidth:"fit-content", height:"5rem", alignItems:'center'}} 
+            >
+              Task Tracker
+              <animated.div style={underline} className="line" />            
             </Typography>
           </Link> 
         </ParallaxLayer>
@@ -81,9 +102,12 @@ function App() {
         >
         <Box>
           <Link href="https://github.com/paulthz4/StudyMaster" underline="none" target="_blank" rel="noopener">
-            <Typography variant="h2" style={{color:'white', padding:'1em', marginLeft:"8%",  width:"25%", height:"5rem", alignItems:'center'}} >
-              
-              <animated.div onMouseOver={()=>setHover(true)} onMouseLeave={()=>setHover(false)} style={underline} id="underline">Study Master</animated.div>
+            <Typography variant="h2" 
+              onMouseOver={()=>setHover(true)} onMouseLeave={()=>setHover(false)}
+              style={{color:'white', padding:'0', marginLeft:"8%",  maxWidth:"fit-content", height:"5rem", alignItems:'center'}} 
+            >
+               Study Master
+              <animated.div style={underline2} className="line" />   
             </Typography>
           </Link>
         </Box>
@@ -94,7 +118,9 @@ function App() {
           offset={0.5}
           speed={0.2}
         >
-          <Typography variant="h1" color="white">Welcome!</Typography>
+          <Typography variant="h1" color="white">
+           Welcome!
+          </Typography>
         </ParallaxLayer>
         
         
