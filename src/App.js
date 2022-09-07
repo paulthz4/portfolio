@@ -1,14 +1,27 @@
+import {React, useState} from 'react';
 import logo from './images/logo.svg';
 import bg from './images/mountains.svg';
 import trees from './images/trees.svg';
 import './App.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { Box,Card, Typography } from '@mui/material';
+import {useSpring, animated} from 'react-spring';
+import { Box,Card, Link, Typography } from '@mui/material';
 import Bio from './components/Bio';
 import TaskTracker from './components/TaskTracker';
 import StudyMaster from './components/StudyMaster';
 
 function App() {
+  const [hover,setHover] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  
+  const underline = useSpring({from: {opacity:1, textDecoration:'none'},
+      to: {textDecoration: hover? 'underline' : 'none'},
+    });
+    
+  const underline2 = useSpring({from: {opacity:1, textDecoration:'none'},
+    to: {textDecoration: toggle? 'underline' : 'none'},
+  });
+  
   return (
     <div className="App" style={{ width: '100%', height: '100%', background: '#1F315B' }}>
       <Parallax pages={7}>
@@ -53,11 +66,11 @@ function App() {
           speed={0.7}
           sticky={{start: 3, end: 4}}
         >
-          {/* <Card display="flex" style={{padding:'1em', marginLeft:"15%",  width:"25%", height:"5rem", alignItems:'center'}}> */}
+          <Link href="https://github.com/paulthz4/TaskTrackerWeb" target="_blank" rel="noopener" underline="none">
             <Typography variant="h2" style={{color:'white', padding:'1em', marginLeft:"8%",  width:"25%", height:"5rem", alignItems:'center'}} >
-              Task Tracker
+              <animated.div style={underline2} onMouseOver={()=>setToggle(true)} onMouseLeave={()=>setToggle(false)}>Task Tracker</animated.div>
             </Typography>
-          {/* </Card> */}
+          </Link> 
         </ParallaxLayer>
         
         <TaskTracker/>
@@ -66,9 +79,14 @@ function App() {
         offset={5.5}
         sticky={{start:5, end:7}}
         >
-          <Typography variant="h2" style={{color:'white', padding:'1em', marginLeft:"8%",  width:"25%", height:"5rem", alignItems:'center'}} >
-            Study Master
-          </Typography>
+        <Box>
+          <Link href="https://github.com/paulthz4/StudyMaster" underline="none" target="_blank" rel="noopener">
+            <Typography variant="h2" style={{color:'white', padding:'1em', marginLeft:"8%",  width:"25%", height:"5rem", alignItems:'center'}} >
+              
+              <animated.div onMouseOver={()=>setHover(true)} onMouseLeave={()=>setHover(false)} style={underline} id="underline">Study Master</animated.div>
+            </Typography>
+          </Link>
+        </Box>
         </ParallaxLayer>
         
         <StudyMaster/>

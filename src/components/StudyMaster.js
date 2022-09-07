@@ -9,7 +9,7 @@ const StudyMaster=()=>{
     <>
       
       <ParallaxLayer 
-        offset={5.2}
+        offset={5.0}
         speed={0.5}
         factor={0.4}
       >
@@ -25,7 +25,7 @@ const StudyMaster=()=>{
       </ParallaxLayer>
       
       <ParallaxLayer 
-        offset={5.4}
+        offset={5.2}
         speed={0.9}
         factor={0.4}
       >
@@ -36,11 +36,11 @@ const StudyMaster=()=>{
       </ParallaxLayer>
       
       <ParallaxLayer
-        offset={5.9}
+        offset={5.8}
         speed={0.5}
-        factor={0.1}
+        factor={0.2}
       >
-        <Box sx={{margin:'auto', width: 'fit-content', display:'flex', justifyContent: 'center', alignItems:'center', gap:'25%'}} >
+        <Box sx={{margin:'auto', width: 'fit-content', display:'flex', justifyContent: 'center', alignItems:'center', gap:'33%'}} >
           <Card elevation={2} sx={{width: '25%', padding:'1.5em'}}>
             <Typography variant="p" sx={{ lineHeight:'170%'}}>
               On the landing page, three settings are shown for the time intervals that you can change for working, short break, and a long break. 
