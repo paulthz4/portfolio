@@ -1,6 +1,7 @@
 import {React, useState} from 'react';
 import logo from './images/logo.svg';
-import bg from './images/mountains.svg';
+import bg from './images/frontmountains.svg';
+import middleMt from './images/backmountain.svg';
 import trees from './images/trees.svg';
 import './App.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
@@ -30,27 +31,31 @@ function App() {
   config: {duration: 300}
 });
   
-  const line = useSpring({from: {opacity:0, textDecoration:'none'},
-    to: {
-      opacity: toggle ? 1 : 0,
-      width: toggle? '80%': '0%',
-    },
-    config: {duration: 400}
-  });
   
   return (
     <div className="App" style={{ width: '100%', height: '100%', background: '#1F315B' }}>
-      <Parallax pages={7}>
+      <Parallax pages={7} style={{backgroundColor:'#1F315B'}}>
+        <ParallaxLayer 
+          offset={0.6} 
+          factor={2}
+          speed={0.5}
+          style={{
+            backgroundImage:`url(${middleMt})`, 
+            backgroundSize: '20%',
+            left:'30%',
+            width:'200%',
+            height:'35%'
+          }}
+        />
         <ParallaxLayer 
           offset={0} 
           factor={2}
           speed={1}
           style={{
             backgroundImage:`url(${bg})`, 
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
           }}
-          >
-        </ParallaxLayer>
+        />
         <ParallaxLayer 
           offset={1}
           factor={1}
