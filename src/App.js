@@ -1,6 +1,6 @@
 import {React, useState} from 'react';
 import logo from './images/logo.svg';
-import bg from './images/frontmountains.svg';
+import frontMts from './images/frontmountains.svg';
 import middleMt from './images/backmountain.svg';
 import trees from './images/trees.svg';
 import './App.css';
@@ -33,7 +33,7 @@ function App() {
   
   
   return (
-    <div className="App" style={{ width: '100%', height: '100%', background: '#1F315B' }}>
+    <div className="App" style={{ width: '100%', height: '100%'}}>
       <Parallax pages={7} style={{backgroundColor:'#1F315B'}}>
         <ParallaxLayer 
           offset={0.6} 
@@ -52,17 +52,17 @@ function App() {
           factor={2}
           speed={1}
           style={{
-            backgroundImage:`url(${bg})`, 
+            backgroundImage:`url(${frontMts})`, 
             backgroundSize: 'cover',
           }}
         />
         <ParallaxLayer 
-          offset={1}
-          factor={1}
+          offset={0.99}
+          factor={2}
           speed={1}
+          style={{backgroundColor:'#91D5A1', border:'none'}}
         >
         {/* light green background */}
-         <div style={{backgroundColor:'#91D5A1', width: '100%', height:'100%'}}></div>
         </ParallaxLayer>
         <ParallaxLayer 
           offset={1}

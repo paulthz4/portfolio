@@ -9,7 +9,7 @@ export default function Bio(){
   return(
     <>
       <ParallaxLayer 
-        offset={1}
+        offset={0.99}
         speed={0.4}
       >
         <Box className="container" sx={{margin:'auto',  width: '40%' }}>
