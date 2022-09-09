@@ -1,8 +1,8 @@
 import {React, useState} from 'react';
 import logo from './images/logo.svg';
-import frontMts from './images/frontmountains.svg';
-import middleMt from './images/backmountain.svg';
-import trees from './images/trees.svg';
+import frontMts from './images/backgrounds/frontmountains.svg';
+import middleMt from './images/backgrounds/backmountain.svg';
+import trees from './images/backgrounds/trees.svg';
 import './App.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import {useSpring, animated} from 'react-spring';
@@ -10,6 +10,7 @@ import { Box,Card, Link, Typography } from '@mui/material';
 import Bio from './components/Bio';
 import TaskTracker from './components/TaskTracker';
 import StudyMaster from './components/StudyMaster';
+import Trees from './components/Trees';
 
 function App() {
   const [hover,setHover] = useState(false);
@@ -64,25 +65,17 @@ function App() {
         >
         {/* light green background */}
         </ParallaxLayer>
+        <Trees speed={1}/>
         <ParallaxLayer 
-          offset={1}
-          factor={1}
-          speed={1}
-          style={{
-            backgroundImage: `url(${trees})`,
-            backigroundSize:'cover',
-          }}
-        />
-        <ParallaxLayer 
-          offset={1.9} 
+          offset={1.75} 
           factor={10.1}
-          speed={1}
+          speed={0.7}
           >
           {/* dark green background */}
           <div style={{backgroundColor:'#669D73', width: '100%', height:'100%'}}></div>
         </ParallaxLayer>
         
-        <Bio/>
+        <Bio />
         
         <ParallaxLayer 
           offset={3}
