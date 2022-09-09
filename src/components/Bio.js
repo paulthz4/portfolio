@@ -20,7 +20,7 @@ export default function Bio(){
               subheader={<Typography variant='p' fontSize='small' sx={{opacity:0.5}}><RoomOutlinedIcon fontSize='small'/> Calgary, Alberta, Canada</Typography>}
               />
               <CardContent sx={{p:5}}>
-                <Typography variant='body2' sx={{textAlign:'justify'}}>
+                <Typography variant='body2' sx={{textAlign:'justify', textAlignLast:'center'}}>
                   I graduated from the University of British Columbia in 2021 with a B.Sc. degree in Computer Science
                   and a minor in Economics. I spend the majority of my free time working on some passions projects that inlove 
                   building web apps that make things more efficient or make tasks a little easier as you can see some of the projects below.
