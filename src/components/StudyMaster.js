@@ -16,7 +16,7 @@ const StudyMaster=()=>{
         <Box sx={{margin:'auto', width: 'fit-content', display:'flex', justifyContent: 'center', alignItems:'center'}} >
           <Card elevation={2} sx={{width: '25%', padding:'2em 6em'}}>
             <Typography variant="p" sx={{ lineHeight:'170%'}}>
-              This is a tool to help users time manage their task by using the Pomodor technique.
+              This is a tool to help users time manage their task by using the Pomodoro technique.
               The method encourages people to work with the time they have. You break your workday into
               25 minute sections seperated by 5 minute breaks. The intervals are referred to as pomodoros.          
             </Typography>

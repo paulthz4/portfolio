@@ -77,6 +77,8 @@ function App() {
           <div style={{backgroundColor:'#669D73', width: '100%', height:'100%'}}></div>
         </ParallaxLayer>
         
+        <Bio/>
+        
         <ParallaxLayer 
           offset={3}
           speed={0.7}
