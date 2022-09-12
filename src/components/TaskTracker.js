@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax,ParallaxLayer } from '@react-spring/parallax';
-import { Box, Card, Paper, Typography } from '@mui/material';
+import { Box, Card, CardMedia, Paper, Typography } from '@mui/material';
 import page from '../images/taskTrackerHomePage.jpg';
 import graph1 from '../images/TaskTrackerWebInsights1.jpg';
 import graph2 from '../images/TaskTrackerWebInsights2.jpg';
@@ -17,6 +17,8 @@ export default function TaskTracker(){
           <Typography variant="p" sx={{lineHeight: '170%', px:3}}>This project helps users gain insight in their productivity habits. 
           Users enter their tasks that they have to complete throughout the day, and start a timer until they finish it. 
           The application tracks how long you take to complete each task and aggregates the time for repeated tasks and plots them on graphs.
+          This was built using React, MongoDB, and Express with some libraries for the front end such as 
+          react-router-dom, framer-motion, material-ui, and chart.js.
           </Typography>
         </Card>
       </ParallaxLayer>
@@ -46,6 +48,8 @@ export default function TaskTracker(){
         <img style={{width:"45%", height:"auto"}} alt="graph 2 showing task length" src={graph2}/>
        </Box>
       </ParallaxLayer>
+      
+      
     </>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 import { ParallaxLayer } from '@react-spring/parallax';
-import { Card, Typography,Box } from '@mui/material';
+import { Card, CardMedia, Typography,Box } from '@mui/material';
 import hp from '../images/studymasterSS.jpg';
 import secondpage from '../images/studymasterTimer.jpg';
-
+import video from '../images/demos/studyMasterDemo.mp4';
+import './styles.css';
 const StudyMaster=()=>{
   return(
     <>
@@ -54,6 +55,19 @@ const StudyMaster=()=>{
             </Typography>
           </Card>
         </Box>
+      </ParallaxLayer>
+      
+      <ParallaxLayer
+        offset={6}
+        speed={0.8}
+      >
+        <Box className='container' sx={{margin:'auto', width: '70%', gap:'33%'}} > 
+            <CardMedia component='video' title='demo' src={video} autoPlay muted loop playsinline style={{width:'100%', height:'auto', border:'none'}} />
+        
+        </Box>
+        {/* <video className="video"  autoPlay loop muted>
+            <source  title='demo' src={video} type='video/mp4'  />Your browser does not support the video tag.
+        </video> */}
       </ParallaxLayer>
     </>
   );
