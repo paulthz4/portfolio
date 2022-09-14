@@ -61,18 +61,18 @@ function App() {
           offset={0.99}
           factor={10}
           speed={1}
-          style={{backgroundColor:'#91D5A1', border:'none'}}
+          style={{backgroundColor:'#5aab63', border:'none'}}
         >
         {/* light green background */}
         </ParallaxLayer>
-        <Trees speed={1} offset={5}/>
+        <Trees speed={1} offset={4.9}/>
         <ParallaxLayer 
-          offset={5.5} 
+          offset={4.9} 
           factor={10.1}
-          speed={0.7}
+          speed={1}
           >
           {/* dark green background */}
-          <div style={{backgroundColor:'#669D73', width: '100%', height:'100%'}}></div>
+          <div style={{backgroundColor:'#3c7743', width: '100%', height:'100%', marginTop:'50%'}}></div>
         </ParallaxLayer>
         
         <Bio />
