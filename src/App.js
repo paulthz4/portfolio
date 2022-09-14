@@ -59,15 +59,15 @@ function App() {
         />
         <ParallaxLayer 
           offset={0.99}
-          factor={2}
+          factor={10}
           speed={1}
           style={{backgroundColor:'#91D5A1', border:'none'}}
         >
         {/* light green background */}
         </ParallaxLayer>
-        <Trees speed={1}/>
+        <Trees speed={1} offset={5}/>
         <ParallaxLayer 
-          offset={1.75} 
+          offset={5.5} 
           factor={10.1}
           speed={0.7}
           >
