@@ -125,11 +125,10 @@ function App() {
         
         
         <ParallaxLayer 
-          offset={2}
+          offset={2.3}
           speed={0.2}
-          factor={1}
         >
-          <Typography variant="h2" color="white" >Recent Projects</Typography>
+          <Typography variant="h2" color="white" >Projects</Typography>
         </ParallaxLayer>
       </Parallax>
     </div>

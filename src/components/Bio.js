@@ -2,6 +2,14 @@ import React from 'react';
 import {Box, Avatar, Card, CardHeader, CardContent, Typography} from "@mui/material";
 import RoomOutlinedIcon from '@mui/icons-material/RoomOutlined';
 import pic from '../images/profilePic.jpeg';
+import reactLogo from '../images/logos/react.png';
+import mongodbLogo from '../images/logos/mongodb.png'
+import javaLogo from '../images/logos/java.png';
+import mysqlLogo from '../images/logos/mysql.png';
+import jsLogo from '../images/logos/javascript.png';
+import nodeLogo from '../images/logos/node2.png';
+import expressLogo from '../images/logos/express.png';
+import githubLogo from '../images/logos/github.png';
 import { ParallaxLayer } from '@react-spring/parallax';
 import './styles.css';
 
@@ -12,8 +20,8 @@ export default function Bio(){
         offset={0.99}
         speed={0.4}
       >
-        <Box className="container" sx={{margin:'auto',  width: '40%' }}>
-          <Card elevation={4} sx={{width: '95%' }}>
+        <Box className="container" sx={{margin:'auto',  width: '75%', gap:'4em', flexDirection: 'column' }}>
+          <Card elevation={4} sx={{width: '45%', mb:'8em' }}>
             <CardHeader 
               avatar={<Avatar alt="Paul Zapote" src={pic} sx={{width:200, height:200, maxWidth:'100%', marginLeft:5}} />}
               title={<Typography fontSize='medium'>Hi there! My name is Paul Zapote</Typography>}
@@ -28,6 +36,18 @@ export default function Bio(){
                 </Typography>
               </CardContent>
           </Card>
+          <Typography variant='h2' sx={{color:'white'}}>Skills</Typography>
+          <Box className="container" sx={{gap:'2em', flexWrap:'wrap', margin: 'auto', maxWidth:'100%'}}>
+            <img alt='react logo' src={javaLogo} style={{width:'5%', height: 'auto'}}/>
+            <img alt='react logo' src={jsLogo} style={{width:'10%', height: 'auto'}}/>
+            <img alt='react logo' src={reactLogo} style={{width:'10%', height: 'auto'}}/>
+            <img alt='react logo' src={expressLogo} style={{width:'15%', height: 'auto'}}/>
+            <img alt='react logo' src={nodeLogo} style={{width:'12%', height: 'auto'}}/>
+            <img alt='react logo' src={mysqlLogo} style={{width:'12%', height: 'auto'}}/>
+            <img alt='mongodb logo' src={mongodbLogo} style={{width:'15%', height: 'auto'}} />
+            <img alt='github logo' src={githubLogo} style={{width:'10%', height:'auto'}} />
+            
+          </Box>
         </Box>
       </ParallaxLayer>
     </>

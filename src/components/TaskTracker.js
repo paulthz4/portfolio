@@ -9,7 +9,7 @@ export default function TaskTracker(){
   return (
     <>
       <ParallaxLayer 
-        offset={3.4}
+        offset={3.2}
         speed={0.3}
         factor={0.2}
       >
