@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.337d7a3b.css",
-    "main.js": "/portfolio/static/js/main.127f56bf.js",
+    "main.js": "/portfolio/static/js/main.1742190b.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/studyMasterDemo.mp4": "/portfolio/static/media/studyMasterDemo.865d2941db0b8a8b81d3.mp4",
     "static/media/TaskTrackerWebInsights1.jpg": "/portfolio/static/media/TaskTrackerWebInsights1.50a1bf583d87ab934ccb.jpg",
@@ -9,9 +9,15 @@
     "static/media/studymasterTimer.jpg": "/portfolio/static/media/studymasterTimer.eb934e6c0522f06e95ad.jpg",
     "static/media/taskTrackerHomePage.jpg": "/portfolio/static/media/taskTrackerHomePage.6dd5b97ec573e93936d0.jpg",
     "static/media/profilePic.jpeg": "/portfolio/static/media/profilePic.12f7a2daf1e46fc406c5.jpeg",
+    "static/media/java.png": "/portfolio/static/media/java.4d2cfa80ef1d7d3131ae.png",
     "static/media/studymasterSS.jpg": "/portfolio/static/media/studymasterSS.2167a50d31f56abcf2be.jpg",
     "static/media/trees.svg": "/portfolio/static/media/trees.f7304352b43c62c23a529dcfa9f3951b.svg",
+    "static/media/mysql.png": "/portfolio/static/media/mysql.1bd161a431c6eb4b6e0a.png",
+    "static/media/github.png": "/portfolio/static/media/github.5b8c047df5d2180c84cd.png",
+    "static/media/react.png": "/portfolio/static/media/react.6ab7e2e9a04e78b4e9c6.png",
     "static/media/trees1.svg": "/portfolio/static/media/trees1.0a1c7482bc4a628bc9186598730615b3.svg",
+    "static/media/mongodb.png": "/portfolio/static/media/mongodb.c15fbad9c08cc9f64d10.png",
+    "static/media/node2.png": "/portfolio/static/media/node2.a7665815f3739ef1ff1d.png",
     "static/media/trees5.svg": "/portfolio/static/media/trees5.d6fce9fe9d0423363b81322da40720d7.svg",
     "static/media/trees3.svg": "/portfolio/static/media/trees3.873fae9a51a69957d89fe9fa7c50f726.svg",
     "static/media/trees4.svg": "/portfolio/static/media/trees4.99c4806aff930febaa291ba509548c9a.svg",
@@ -21,11 +27,11 @@
     "static/media/backmountain.svg": "/portfolio/static/media/backmountain.dca95ce68965e2a6c93dd1e4c33ca7d6.svg",
     "index.html": "/portfolio/index.html",
     "main.337d7a3b.css.map": "/portfolio/static/css/main.337d7a3b.css.map",
-    "main.127f56bf.js.map": "/portfolio/static/js/main.127f56bf.js.map",
+    "main.1742190b.js.map": "/portfolio/static/js/main.1742190b.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.337d7a3b.css",
-    "static/js/main.127f56bf.js"
+    "static/js/main.1742190b.js"
   ]
 }
