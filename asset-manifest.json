@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.337d7a3b.css",
-    "main.js": "/portfolio/static/js/main.1742190b.js",
+    "main.js": "/portfolio/static/js/main.8100ca7f.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/studyMasterDemo.mp4": "/portfolio/static/media/studyMasterDemo.865d2941db0b8a8b81d3.mp4",
     "static/media/TaskTrackerWebInsights1.jpg": "/portfolio/static/media/TaskTrackerWebInsights1.50a1bf583d87ab934ccb.jpg",
@@ -19,6 +19,7 @@
     "static/media/mongodb.png": "/portfolio/static/media/mongodb.c15fbad9c08cc9f64d10.png",
     "static/media/node2.png": "/portfolio/static/media/node2.a7665815f3739ef1ff1d.png",
     "static/media/trees5.svg": "/portfolio/static/media/trees5.d6fce9fe9d0423363b81322da40720d7.svg",
+    "static/media/css.png": "/portfolio/static/media/css.8784736fcc5308f77a1e.png",
     "static/media/trees3.svg": "/portfolio/static/media/trees3.873fae9a51a69957d89fe9fa7c50f726.svg",
     "static/media/trees4.svg": "/portfolio/static/media/trees4.99c4806aff930febaa291ba509548c9a.svg",
     "static/media/trees2.svg": "/portfolio/static/media/trees2.a3d84d1dc330af469ff571a0750fd88e.svg",
@@ -27,11 +28,11 @@
     "static/media/backmountain.svg": "/portfolio/static/media/backmountain.dca95ce68965e2a6c93dd1e4c33ca7d6.svg",
     "index.html": "/portfolio/index.html",
     "main.337d7a3b.css.map": "/portfolio/static/css/main.337d7a3b.css.map",
-    "main.1742190b.js.map": "/portfolio/static/js/main.1742190b.js.map",
+    "main.8100ca7f.js.map": "/portfolio/static/js/main.8100ca7f.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.337d7a3b.css",
-    "static/js/main.1742190b.js"
+    "static/js/main.8100ca7f.js"
   ]
 }
