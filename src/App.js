@@ -7,6 +7,7 @@ import './App.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import {useSpring, animated} from 'react-spring';
 import { Box,Card, Link, Typography } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import Bio from './components/Bio';
 import TaskTracker from './components/TaskTracker';
 import StudyMaster from './components/StudyMaster';
@@ -72,7 +73,7 @@ function App() {
           speed={1}
           >
           {/* dark green background */}
-          <div style={{backgroundColor:'#3c7743', width: '100%', height:'100%', marginTop:'50%'}}></div>
+          <div style={{backgroundColor:'#3c7743', width: '100%', height:'100%', marginTop:'40%'}}></div>
         </ParallaxLayer>
         
         <Bio />
@@ -82,16 +83,19 @@ function App() {
           speed={0.7}
           sticky={{start: 3, end: 4}}
         >
-          <Link href="https://github.com/paulthz4/TaskTrackerWeb" target="_blank" rel="noopener" underline="none">
-            <Typography variant="h2" 
-              onMouseOver={()=>setToggle(true)} 
-              onMouseLeave={()=>setToggle(false)}
-              style={{color:'white', padding:'0em', marginLeft:"8%",  maxWidth:"fit-content", height:"5rem", alignItems:'center'}} 
-            >
-              Task Tracker
-              <animated.div style={underline} className="line" />            
-            </Typography>
-          </Link> 
+          <Box className='container' sx={{marginLeft:'8%', flexDirection:'row', width:'20%', gap:'2em'}}>
+            <Link href="https://application-0-daeqg.mongodbstitch.com" target="_blank" rel="noopener" underline="none">
+              <Typography variant="h2" 
+                onMouseOver={()=>setToggle(true)} 
+                onMouseLeave={()=>setToggle(false)}
+                style={{color:'white', padding:'0em', height:"5rem", alignItems:'center'}} 
+              >
+                Task Tracker
+                <animated.div style={underline} className="line" />            
+              </Typography>
+            </Link> 
+            <Link href="https://github.com/paulthz4/TaskTrackerWeb" underline="none" target="_blank" rel="noopener"><GitHubIcon sx={{color:'black', position:'relative', left:'-25%'}}/></Link>
+          </Box>
         </ParallaxLayer>
         
         <TaskTracker/>
@@ -100,16 +104,17 @@ function App() {
         offset={5.5}
         sticky={{start:5, end:7}}
         >
-        <Box>
-          <Link href="https://github.com/paulthz4/StudyMaster" underline="none" target="_blank" rel="noopener">
+        <Box className='container' sx={{marginLeft:'8%', flexDirection:'row', width:'20%', gap:'2em'}}>
+          <Link href="https://paulthz4.github.io/StudyMaster/" underline="none" target="_blank" rel="noopener" sx={{maxWidth:'fit-content'}} >
             <Typography variant="h2" 
               onMouseOver={()=>setHover(true)} onMouseLeave={()=>setHover(false)}
-              style={{color:'white', padding:'0', marginLeft:"8%",  maxWidth:"fit-content", height:"5rem", alignItems:'center'}} 
+              style={{color:'white', padding:'0', width:"fit-content", height:"5rem"}} 
             >
                Study Master
               <animated.div style={underline2} className="line" />   
             </Typography>
           </Link>
+          <Link href="https://github.com/paulthz4/StudyMaster" underline="none" target="_blank" rel="noopener"><GitHubIcon sx={{color:'black', position:'relative', left:'-25%'}}/></Link>
         </Box>
         </ParallaxLayer>
         
@@ -128,7 +133,9 @@ function App() {
           offset={2.3}
           speed={0.2}
         >
-          <Typography variant="h2" color="white" >Projects</Typography>
+          <Box className='container' sx={{margin:'auto', width:'15%', borderBottom:'solid black 2px'}}>
+            <Typography variant='h2' black='black'>Projects</Typography>
+          </Box>        
         </ParallaxLayer>
       </Parallax>
     </div>
