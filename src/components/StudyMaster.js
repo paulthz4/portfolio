@@ -15,7 +15,7 @@ const StudyMaster=()=>{
         factor={0.2}
       >
         <Box sx={{margin:'auto', width: 'fit-content', display:'flex', justifyContent: 'center', alignItems:'center'}} >
-          <Card elevation={2} sx={{width: '30%', padding:'2em 6em'}}>
+          <Card elevation={2} sx={{width: '30%', padding:'2em 6em', maxWidth:'2900px'}}>
             <Typography variant="p" sx={{ lineHeight:'170%'}}>
               This is a tool to help users time manage their task by using the Pomodoro technique.
               The method encourages people to work with the time they have. You break your workday into

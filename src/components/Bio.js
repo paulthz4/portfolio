@@ -22,7 +22,7 @@ export default function Bio(){
         speed={0.4}
       >
         <Box className="container" sx={{margin:'auto',  width: '75%', gap:'4em', flexDirection: 'column' }}>
-          <Card elevation={4} sx={{width: '45%', mb:'8em' }}>
+          <Card elevation={4} sx={{width: '45%', mb:'8em', maxWidth:'720px' }}>
             <CardHeader 
               avatar={<Avatar alt="Paul Zapote" src={pic} sx={{width:'10em', height:'10em', marginLeft:5}} />}
               title={<Typography fontSize='medium'>Hi there! My name is Paul Zapote</Typography>}

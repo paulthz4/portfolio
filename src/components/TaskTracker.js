@@ -13,7 +13,7 @@ export default function TaskTracker(){
         speed={0.3}
         factor={0.2}
       >
-        <Card display="flex" elevation={4} sx={{ margin:"auto", padding:"2em 6em", width:"25%", height:"fit-content", alignItems:'center'}}>
+        <Card display="flex" elevation={4} sx={{ margin:"auto", padding:"2em 6em", width:"25%", height:"fit-content", alignItems:'center', maxWidth:'600px'}}>
           <Typography variant="p" sx={{lineHeight: '170%', px:3}}>This project helps users gain insight in their productivity habits. 
           Users enter their tasks that they have to complete throughout the day, and start a timer until they finish it. 
           The application tracks how long you take to complete each task and aggregates the time for repeated tasks and plots them on graphs.
@@ -29,7 +29,7 @@ export default function TaskTracker(){
       >
         <Box sx={{margin:'0', width: 'fit-content', display:'flex', justifyContent: 'center', alignItems:'center', gap:'7em'}} >
           <img alt="task tracker home page" src={page} style={{width:"45%", height:"auto"}}/>
-          <Card elevation={2} sx={{width: '25%', p:2}}>
+          <Card elevation={2} sx={{width: '25%', p:2, maxWidth:'440px'}}>
             <Typography variant='p' sx={{ lineHeight:'170%'}}>The home page where all tasks are shown as well as its properties.
               Date and time created, length of time worked on, how many times the task was paused.
               Has pagination functionality as well as search bar for searching tasks.              
